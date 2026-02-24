@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural da Vergonha - Pink</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0104;
+            --primary: #ff0066;
+            --primary-glow: rgba(255, 0, 102, 0.5);
+            --secondary: #ffb3c1;
+            --text: #fff0f3;
+            --glass: rgba(255, 0, 102, 0.1);
+            --glass-border: rgba(255, 0, 102, 0.3);
+            --font-main: 'Outfit', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--bg);
+            background-image: 
+                radial-gradient(circle at 20% 20%, rgba(255, 0, 102, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 80% 80%, rgba(255, 0, 102, 0.1) 0%, transparent 40%);
+            color: var(--text);
+            font-family: var(--font-main);
+            min-height: 100vh;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container { max-width: 1200px; width: 100%; }
+
+        header { text-align: center; margin-bottom: 3rem; }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            font-weight: 800;
+            text-transform: uppercase;
+            background: linear-gradient(to bottom, #fff, var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 15px var(--primary-glow));
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle { color: var(--secondary); font-size: 1.2rem; opacity: 0.8; }
+
+        .mural {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .tweet-card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border-radius: 1.5rem;
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tweet-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            border-color: var(--primary);
+            box-shadow: 0 10px 40px rgba(255, 0, 102, 0.3);
+        }
+
+        .shame-badge {
+            position: absolute;
+            top: 1rem; right: 1rem;
+            background: var(--primary);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 2rem;
+            font-size: 0.7rem;
+            font-weight: 800;
+        }
+
+        .tweet-text { font-size: 1.15rem; line-height: 1.6; margin-bottom: 1.5rem; margin-top: 1rem; }
+
+        .footer-card { margin-top: auto; display: flex; justify-content: space-between; opacity: 0.5; font-size: 0.8rem; }
+
+        .statement {
+            margin: 5rem auto;
+            padding: 3rem;
+            background: linear-gradient(135deg, rgba(255,0,102,0.05), rgba(255,0,102,0.15));
+            border: 2px solid var(--primary);
+            border-radius: 2.5rem;
+            text-align: center;
+            max-width: 800px;
+            box-shadow: 0 0 50px rgba(255, 0, 102, 0.1);
+        }
+
+        .statement h2 { font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem; }
+        .statement p { font-size: 1.2rem; line-height: 1.8; color: var(--secondary); }
+
+        footer.site-footer { margin-top: 3rem; opacity: 0.4; font-size: 0.8rem; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mural da Vergonha</h1>
+            <p class="subtitle">Compilação histórica da total falta de noção do Pink (@oiefofo)</p>
+        </header>
+
+        <div class="mural">
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #31</div>
+                    <p class="tweet-text">"quero transar no colinho"</p>
+                    <div class="footer-card">
+                        <span>💬 44  🔄 14  ❤️ 121</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #30</div>
+                    <p class="tweet-text">"eu queria ser tao fofa e delicada a ponto do meu futuro namorado ter dó de me machucar na hora do fodifodi"</p>
+                    <div class="footer-card">
+                        <span>💬 14  🔄 27  ❤️ 188</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #29</div>
+                    <p class="tweet-text">"quando voce fica chapada e fica com tesao ao invés d ficar triste"</p>
+                    <div class="footer-card">
+                        <span>💬 14  🔄 21  ❤️ 83</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #28</div>
+                    <p class="tweet-text">"amo ser chamada de mamae"</p>
+                    <div class="footer-card">
+                        <span>💬 4  🔄 24  ❤️ 3</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #27</div>
+                    <p class="tweet-text">"odeio homens que não obedecem mulheres tipo vc é homem, sua obrigação é obedecer e quieto kk"</p>
+                    <div class="footer-card">
+                        <span>💬 18  🔄 0  ❤️ 124</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #26</div>
+                    <p class="tweet-text">"me vestiria com fantasias se isso fosse agradar meu futuro namorado"</p>
+                    <div class="footer-card">
+                        <span>💬 23  🔄 28  ❤️ 147</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #25</div>
+                    <p class="tweet-text">"tropa que vontade de botar piercing no peito pqp"</p>
+                    <div class="footer-card">
+                        <span>💬 35  🔄 3  ❤️ 159</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #24</div>
+                    <p class="tweet-text">"acho que ser branca e ficar vermelha/ roxa facilmente provavelmente esta nas coisas que eu sinto mais excitantes no mundo"</p>
+                    <div class="footer-card">
+                        <span>💬 15  🔄 19  ❤️ 176</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #23</div>
+                    <p class="tweet-text">"meta: dormir c o namorado e enquanto ele dorme vc bota seu peito na boca dele pra ele dormir mamando"</p>
+                    <div class="footer-card">
+                        <span>💬 18  🔄 25  ❤️ 121</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #22</div>
+                    <p class="tweet-text">"eu te amo pink ♡"</p>
+                    <div class="footer-card">
+                        <span>💬 46  🔄 27  ❤️ 43</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #21</div>
+                    <p class="tweet-text">"acho que o meu maior sonho é ter um namorado gamer e eu chupar ele enquanto ele joga"</p>
+                    <div class="footer-card">
+                        <span>💬 31  🔄 25  ❤️ 1</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #20</div>
+                    <p class="tweet-text">"eu i a pink fazendo justisa"</p>
+                    <div class="footer-card">
+                        <span>💬 48  🔄 12  ❤️ 3</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #19</div>
+                    <p class="tweet-text">"amo minhas amigas linduxasfofakwai"</p>
+                    <div class="footer-card">
+                        <span>💬 15  🔄 10  ❤️ 99</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #18</div>
+                    <p class="tweet-text">"tesão 
+ciúmes 
+tesao
+ciumes
+tesao"</p>
+                    <div class="footer-card">
+                        <span>💬 45  🔄 3  ❤️ 47</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #17</div>
+                    <p class="tweet-text">"adoro homem dengoso que demonstra fala o que sente necessita de carinho afeto gosta de atenção bebezinho manhoso ai kfjkd"</p>
+                    <div class="footer-card">
+                        <span>💬 39  🔄 24  ❤️ 149</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #16</div>
+                    <p class="tweet-text">"Memes para marcar ele(a)"</p>
+                    <div class="footer-card">
+                        <span>💬 21  🔄 13  ❤️ 134</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #15</div>
+                    <p class="tweet-text">"SE PREPARA PRA QND ACORDAR"</p>
+                    <div class="footer-card">
+                        <span>💬 2  🔄 14  ❤️ 42</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #14</div>
+                    <p class="tweet-text">"isso é o mais puro suco do Brasil"</p>
+                    <div class="footer-card">
+                        <span>💬 6  🔄 19  ❤️ 3</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #13</div>
+                    <p class="tweet-text">"quando voce ta com tanto tesao que comeca a se sentir assim"</p>
+                    <div class="footer-card">
+                        <span>💬 2  🔄 4  ❤️ 0</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #12</div>
+                    <p class="tweet-text">"posts que eu me indentifico"</p>
+                    <div class="footer-card">
+                        <span>💬 23  🔄 3  ❤️ 30</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #11</div>
+                    <p class="tweet-text">"Po nao é possível kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"</p>
+                    <div class="footer-card">
+                        <span>💬 8  🔄 21  ❤️ 121</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #10</div>
+                    <p class="tweet-text">"izis para d repostar corte porra"</p>
+                    <div class="footer-card">
+                        <span>💬 10  🔄 2  ❤️ 190</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #9</div>
+                    <p class="tweet-text">"meow_loola reviveu tropa? KKMKKKMMMMMMKKKKK"</p>
+                    <div class="footer-card">
+                        <span>💬 45  🔄 19  ❤️ 28</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #8</div>
+                    <p class="tweet-text">"eita tropa amo molheres"</p>
+                    <div class="footer-card">
+                        <span>💬 15  🔄 20  ❤️ 29</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #7</div>
+                    <p class="tweet-text">"acabei de ver os peitos mais lindos da minha vida, fonfon"</p>
+                    <div class="footer-card">
+                        <span>💬 27  🔄 5  ❤️ 41</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #6</div>
+                    <p class="tweet-text">"se fosse pra pegar um fake eu legava uma franjudinha"</p>
+                    <div class="footer-card">
+                        <span>💬 5  🔄 8  ❤️ 103</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #5</div>
+                    <p class="tweet-text">"falaram pra guria q eu sou fake e ela acredito vey"</p>
+                    <div class="footer-card">
+                        <span>💬 5  🔄 3  ❤️ 78</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #4</div>
+                    <p class="tweet-text">"homem é td otario vsfd"</p>
+                    <div class="footer-card">
+                        <span>💬 3  🔄 22  ❤️ 82</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #3</div>
+                    <p class="tweet-text">"só queria ser amarrada e ser fodida"</p>
+                    <div class="footer-card">
+                        <span>💬 27  🔄 27  ❤️ 124</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #2</div>
+                    <p class="tweet-text">"eu sou rosa vey"</p>
+                    <div class="footer-card">
+                        <span>💬 20  🔄 26  ❤️ 109</span>
+                    </div>
+                </div>
+            
+                <div class="tweet-card">
+                    <div class="shame-badge">Pérola #1</div>
+                    <p class="tweet-text">"Other competition · Trending"</p>
+                    <div class="footer-card">
+                        <span>💬 9  🔄 9  ❤️ 79</span>
+                    </div>
+                </div>
+            
+        </div>
+
+        <section class="statement">
+            <h2>🚨 Veredito de Vergonha</h2>
+            <p>Após análise, este mural prova que <strong>Pink</strong> atingiu o limite do hornyposting. Que sirva de lição.</p>
+        </section>
+
+        <footer class="site-footer">
+            © 2026 Memorial da Vergonha • Site Único Estático
+        </footer>
+    </div>
+</body>
+</html>
